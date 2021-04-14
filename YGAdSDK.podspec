@@ -12,10 +12,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/LongYunGit/YGAdSDK.git", :tag => "#{spec.version}" }
   spec.frameworks           = "Foundation", "UIKit", "SystemConfiguration", "MobileCoreServices", "AdSupport", "WebKit", "CoreTelephony", "CoreMotion"
   spec.exclude_files = "README.md"
-  spec.pod_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => ['arm64', 'i386']
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => ['arm64', 'i386'] }
   spec.requires_arc = true
   spec.vendored_frameworks = "Frameworks/*.framework"
   spec.dependency "YGNet", "0.0.3"
