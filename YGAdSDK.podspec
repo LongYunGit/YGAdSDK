@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "README.md"
   spec.requires_arc = true
   spec.vendored_frameworks = "Frameworks/*.framework"
+  spec.resource = 'YGAdSDK.bundle'
   spec.dependency "YGNet", "0.0.3"
 
 end
