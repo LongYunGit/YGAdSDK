@@ -42,9 +42,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fullscreenVideoAdDidDownLoadVideo:(YGADFullscreenVideoAdapter *)fullscreenVideoAd;
 
 /**
+ *  视频下载失败
+ */
+- (void)fullscreenVideoAd:(YGADFullscreenVideoAdapter *)fullscreenVideoAd didDownLoadVideoFail:(NSError *)error;
+
+/**
  *  广告展示成功
  */
 - (void)fullscreenVideoAdSuccessPresentScreen:(YGADFullscreenVideoAdapter *)fullscreenVideoAd;
+
+/**
+ *  广告展示失败
+ */
+- (void)fullscreenVideoAd:(YGADFullscreenVideoAdapter *)fullscreenVideoAd didPresentScreenFail:(NSError *)error;
 
 /**
  *  广告被点击

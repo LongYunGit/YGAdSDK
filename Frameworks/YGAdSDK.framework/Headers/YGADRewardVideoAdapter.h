@@ -49,9 +49,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)rewardVideoAdDidDownLoadVideo:(YGADRewardVideoAdapter *)rewardVideoAd;
 
 /**
+ *  视频下载失败
+ */
+- (void)rewardVideoAd:(YGADRewardVideoAdapter *)rewardVideoAd loadVideoFailWithError:(NSError *)error;
+
+/**
  *  广告展示成功
  */
 - (void)rewardVideoAdSuccessPresentScreen:(YGADRewardVideoAdapter *)rewardVideoAd;
+
+/**
+ *  广告展示失败
+ */
+- (void)rewardVideoAd:(YGADRewardVideoAdapter *)rewardVideoAd didPresentScreenFail:(NSError *)error;
 
 /**
  *  广告点击跳过

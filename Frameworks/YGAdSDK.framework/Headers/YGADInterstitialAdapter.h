@@ -53,6 +53,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)interstitialAdSuccessPresentScreen:(YGADInterstitialAdapter *)interstitialAd;
 
 /**
+ *  广告展示失败
+ */
+- (void)interstitialAd:(YGADInterstitialAdapter *)interstitialAd didPresentScreenFail:(NSError *)error;
+
+/**
  *  广告被点击
  */
 - (void)interstitialAdDidClicked:(YGADInterstitialAdapter *)interstitialAd;
