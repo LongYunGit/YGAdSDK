@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "YGAdSDK"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "The framework provided by Longyun Technology."
   spec.description  = <<-DESC
                       The framework provided by Longyun Technology,provide Yunlong SSP platform advertising display.
