@@ -38,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)bannerAdViewDidClosed:(YGADBannerView *)bannerAdView;
 
+/**
+ 打开deeplink结果
+ */
+- (void)bannerAdView:(YGADBannerView *)bannerAdView openDeeplinkSuccess:(BOOL)success;
+
 @end
 
 @interface YGADBannerView : UIView

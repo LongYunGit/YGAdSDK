@@ -44,6 +44,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)splashadAdViewDidClosed:(YGADSplashAdView *)splashAdView;
 
+/**
+ 打开deeplink结果
+ */
+- (void)splashadAdView:(YGADSplashAdView *)splashAdView openDeeplinkSuccess:(BOOL)success;
+
 @end
 
 

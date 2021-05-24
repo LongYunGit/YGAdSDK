@@ -86,6 +86,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)fullscreenVideoAd:(YGADFullscreenVideoAdapter *)fullscreenVideoAd didVideoPlayFail:(NSError *)error;
 
+/**
+ 打开deeplink结果
+ */
+- (void)fullscreenVideoAd:(YGADFullscreenVideoAdapter *)fullscreenVideoAd openDeeplinkSuccess:(BOOL)success;
+
+/**
+ 视频播放进度
+ */
+- (void)fullscreenVideoAd:(YGADFullscreenVideoAdapter *)fullscreenVideoAd didPlayToTimeSeconds:(int)seconds totalSeconds:(int)total;
+
 @end
 
 NS_ASSUME_NONNULL_END

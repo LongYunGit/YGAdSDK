@@ -93,6 +93,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)rewardVideoAd:(YGADRewardVideoAdapter *)rewardVideoAd didVideoPlayFail:(NSError *)error;
 
+/**
+ 打开deeplink结果
+ */
+- (void)rewardVideoAd:(YGADRewardVideoAdapter *)rewardVideoAd openDeeplinkSuccess:(BOOL)success;
+
+/**
+ 视频播放进度
+ */
+- (void)rewardVideoAd:(YGADRewardVideoAdapter *)rewardVideoAd didPlayToTimeSeconds:(int)seconds totalSeconds:(int)total;
+
 @end
 
 NS_ASSUME_NONNULL_END

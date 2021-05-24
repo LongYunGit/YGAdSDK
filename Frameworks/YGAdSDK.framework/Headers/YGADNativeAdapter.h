@@ -50,6 +50,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)nativeAdDidClicked:(YGADNativeView *)nativeAdView;
 
+/**
+ 打开deeplink结果
+ */
+- (void)nativeAd:(YGADNativeView *)nativeAdView openDeeplinkSuccess:(BOOL)success;
+
 @end
 
 NS_ASSUME_NONNULL_END
